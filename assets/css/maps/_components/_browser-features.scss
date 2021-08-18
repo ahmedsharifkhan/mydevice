@@ -1,0 +1,103 @@
+
+
+/*
+ * Browser features section
+ */
+
+.browser-features {
+
+  .box {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+
+      span {
+        width: 30px;
+        height: 30px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        margin-right: $spacer-small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:not(.supported) {
+
+        span {
+          @extend .icon-cross;
+          border-color: $color-mydevice-sec;
+          color: $color-mydevice-sec;
+        }
+
+      }
+
+      &.supported {
+
+        order: -1;
+
+        span {
+          @extend .icon-check;
+          border-color: $color-mydevice;
+          color: $color-mydevice;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+@include respond-to("tiny") {
+
+  .browser-features {
+
+    .box {
+      > div {
+        &:not(:first-child) {
+          margin-top: $spacer-large;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@include respond-to("tiny-up") {
+
+  .browser-features {
+
+    .box {
+
+      background-image: linear-gradient($gray-600, $gray-600);
+      background-size: 1px calc(100% - 4rem);
+      background-position: center center;
+      background-repeat: no-repeat;
+
+    }
+
+  }
+
+}
+
+
+@include respond-to("small-up") {
+
+  .box {
+
+    .values {
+      font-size: 1.6rem;
+    }
+
+  }
+
+}

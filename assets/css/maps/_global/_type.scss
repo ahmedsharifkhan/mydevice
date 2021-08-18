@@ -1,0 +1,156 @@
+/*
+ * Type / Typography
+ * Override some styles over KNACSS for links, headings and other typographic Stuff
+ *
+ * @author: Alsacreations
+ */
+
+
+// WYSIWYG / user content
+.content {
+  // Links with surrounding text should be underlined (or else have another effect like bold, italic but we don't want that)
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+h2, .h2-like,
+h3, .h3-like {
+  color: $color-titles;
+  font-weight: 400;
+  line-height: $line-height-xs;
+}
+
+
+h2, .h2-like {
+  margin-bottom: $spacer-medium-plus;
+
+  &:not(:first-child) {
+    margin-top: $spacer-medium-plus;
+  }
+}
+
+em {
+  font-style: normal;
+}
+
+
+
+@include respond-to("tiny-up") {
+
+  h2, .h2-like {
+    margin-bottom: $spacer-large;
+
+    &:not(:first-child) {
+      margin-top: $spacer-large;
+    }
+  }
+
+  h3, .h3-like,
+  h4, .h4-like {
+    margin-bottom: $spacer-medium;
+  }
+
+  p {
+    margin-bottom: $spacer-medium;
+  }
+
+}
+
+@include respond-to("small-up") {
+
+  h2, .h2-like {
+    margin-bottom: $spacer-large-plus;
+
+    &:not(:first-child) {
+      margin-top: $spacer-large-plus;
+    }
+  }
+
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.woff?ejneg0') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adapt:before {
+  content: "\e900";
+}
+
+.icon-arrow-left:before {
+  content: "\e901";
+}
+
+.icon-arrow-right:before {
+  content: "\e902";
+}
+
+.icon-check-draw:before {
+  content: "\e903";
+}
+
+.icon-check:before {
+  content: "\e904";
+}
+
+.icon-cross:before {
+  content: "\e905";
+}
+
+.icon-more:before {
+  content: "\e906";
+}
+
+.icon-paint:before {
+  content: "\e907";
+}
+
+.icon-pen:before {
+  content: "\e908";
+}
+
+.icon-plus:before {
+  content: "\e909";
+}
+
+.icon-power:before {
+  content: "\e90a";
+}
+
+.icon-resize:before {
+  content: "\e90b";
+}
+
+.icon-ticket:before {
+  content: "\e90c";
+}
+
+.icon-typo:before {
+  content: "\e90d";
+}
+
+.icon-github:before {
+  content: "\f09b";
+}

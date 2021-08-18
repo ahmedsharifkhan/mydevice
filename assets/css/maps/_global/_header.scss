@@ -1,0 +1,41 @@
+.header {
+
+  background: $white;
+  padding: $spacer-medium;
+  position: relative;
+  z-index: 42;
+  text-align: center;
+
+  .nav {
+    max-width: $extra-large;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0;
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+@include respond-to("small-up") {
+
+  .header {
+    padding: $spacer-large $spacer-medium;
+    border-bottom: 1px solid $table-border;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+
+}

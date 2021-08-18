@@ -1,0 +1,90 @@
+/*
+ * yourProject main Scss file
+ * by Alsacréations
+ *
+ * @author: Alsacréations
+ * @created: 2017-01-01
+ */
+
+//
+// Configuration
+//
+// Variables
+@import "_config/_variables";
+
+// Mixins
+@import "_config/_mixins";
+
+
+// KNACSS imports
+// -----------------
+@import "knacss";
+
+
+// your own styles
+// -----------------
+
+//
+// Common things
+//
+// Extend
+// @import "_global/_extend";
+
+// Header
+@import "_global/_header";
+
+// Navigation
+// @import "_global/_navigation";
+
+// Footer
+@import "_global/_footer";
+
+// Icons
+// @import "_global/_font-icons";
+
+// Fonts
+// @import "_global/_fonts";
+
+// Helpers
+// @import "_global/_helpers";
+
+// Buttons
+@import "_global/_buttons";
+
+// Typographic stuff
+@import "_global/_type";
+
+// Forms
+// @import "_global/_forms";
+
+//
+// Global
+// CSS styles applied after all other ones
+//
+@import "_global/_global";
+
+//
+// Layout
+//
+// Layout
+// @import "_template/_layout";
+
+// Page {name of page 1}
+// @import "_template/_page-1";
+
+
+
+// Component Hero
+@import "_components/_hero";
+@import "_components/_screen-metrics";
+@import "_components/_browser-features";
+@import "_components/_compare-devices";
+@import "_components/_meta-viewport";
+@import "_components/_ref-picture";
+@import "_components/_ressources";
+
+// Fill some of the screen metrics values
+@import "_components/_metrics-css";
+
+// Tablesort
+@import "_components/_tablesort";

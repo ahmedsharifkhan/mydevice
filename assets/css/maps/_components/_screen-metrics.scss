@@ -1,0 +1,83 @@
+
+
+/*
+ * Screen metrics section
+ */
+
+.metrics {
+
+  &-title {
+    background-color: $color-mydevice-sec-dark;
+    text-transform: uppercase;
+    padding: $spacer-small-plus $spacer-medium;
+    margin: 0;
+  }
+
+  .values {
+    padding: $spacer-medium;
+
+    li {
+      justify-content: space-between;
+    }
+
+    em {
+      background-color: $gray-700;
+      padding: $spacer-tiny $spacer-small;
+      font-weight: bold;
+      font-style: normal;
+      text-align: right;
+      color: $color-mydevice;
+      margin-left: $spacer-small;
+      flex-shrink: 0;
+    }
+
+  }
+
+}
+
+
+
+@include respond-to('small') {
+
+  .metrics {
+
+    &-grid {
+      .box {
+        &:not(:first-child) {
+          margin-top: $spacer-medium;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@include respond-to('small-up') {
+
+  .metrics {
+
+    &-grid {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: $spacer-medium;
+    }
+
+    &-title {
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+    }
+
+  }
+
+}
+
+
+@include respond-to('extra-large-up') {
+
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}

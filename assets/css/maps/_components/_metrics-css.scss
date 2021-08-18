@@ -1,0 +1,565 @@
+
+
+@media (orientation:landscape) {
+ .cssorient em:after {
+  content:"landscape"
+ }
+}
+@media (orientation:portrait) {
+ .cssorient em:after {
+  content:"portrait"
+ }
+}
+@media (min-device-width:240px) {
+ .cssdevwidth em:after {
+  content:"240px+"
+ }
+ .cssdevwidthem em:after {
+  content:"15em+"
+ }
+}
+@media (min-device-width:320px) {
+ .cssdevwidth em:after {
+  content:"320px+"
+ }
+ .cssdevwidthem em:after {
+  content:"20em+"
+ }
+}
+@media (min-device-width:360px) {
+ .cssdevwidth em:after {
+  content:"360px+"
+ }
+ .cssdevwidthem em:after {
+  content:"22.5em+"
+ }
+}
+@media (min-device-width:375px) {
+ .cssdevwidth em:after {
+  content:"375px+"
+ }
+ .cssdevwidthem em:after {
+  content:"23.4em+"
+ }
+}
+@media (min-device-width:390px) {
+ .cssdevwidth em:after {
+  content:"390px+"
+ }
+ .cssdevwidthem em:after {
+  content:"24.4em+"
+ }
+}
+@media (min-device-width:412px) {
+ .cssdevwidth em:after {
+  content:"412px+"
+ }
+ .cssdevwidthem em:after {
+  content:"25em+"
+ }
+}
+@media (min-device-width:414px) {
+ .cssdevwidth em:after {
+  content:"414px+"
+ }
+ .cssdevwidthem em:after {
+  content:"25.8em+"
+ }
+}
+@media (min-device-width:480px) {
+ .cssdevwidth em:after {
+  content:"480px+"
+ }
+ .cssdevwidthem em:after {
+  content:"30em+"
+ }
+}
+@media (min-device-width:504px) {
+ .cssdevwidth em:after {
+  content:"504px+"
+ }
+ .cssdevwidthem em:after {
+  content:"31.5em+"
+ }
+}
+@media (min-device-width:540px) {
+ .cssdevwidth em:after {
+  content:"540px+"
+ }
+ .cssdevwidthem em:after {
+  content:"33em+"
+ }
+}
+@media (min-device-width:568px) {
+ .cssdevwidth em:after {
+  content:"568px+"
+ }
+ .cssdevwidthem em:after {
+  content:"35em+"
+ }
+}
+@media (min-device-width:576px) {
+ .cssdevwidth em:after {
+  content:"576px+"
+ }
+ .cssdevwidthem em:after {
+  content:"36em+"
+ }
+}
+@media (min-device-width:600px) {
+ .cssdevwidth em:after {
+  content:"600px+"
+ }
+ .cssdevwidthem em:after {
+  content:"38em+"
+ }
+}
+@media (min-device-width:640px) {
+ .cssdevwidth em:after {
+  content:"640px+"
+ }
+ .cssdevwidthem em:after {
+  content:"40em+"
+ }
+}
+@media (min-device-width:690px) {
+ .cssdevwidth em:after {
+  content:"690px+"
+ }
+ .cssdevwidthem em:after {
+  content:"43em+"
+ }
+}
+@media (min-device-width:720px) {
+ .cssdevwidth em:after {
+  content:"720px+"
+ }
+ .cssdevwidthem em:after {
+  content:"45em+"
+ }
+}
+@media (min-device-width:768px) {
+ .cssdevwidth em:after {
+  content:"768px+"
+ }
+ .cssdevwidthem em:after {
+  content:"48em+"
+ }
+}
+@media (min-device-width:800px) {
+ .cssdevwidth em:after {
+  content:"800px+"
+ }
+ .cssdevwidthem em:after {
+  content:"50em+"
+ }
+}
+@media (min-device-width:960px) {
+ .cssdevwidth em:after {
+  content:"960px+"
+ }
+ .cssdevwidthem em:after {
+  content:"60em+"
+ }
+}
+@media (min-device-width:980px) {
+ .cssdevwidth em:after {
+  content:"980px+"
+ }
+ .cssdevwidthem em:after {
+  content:"61em+"
+ }
+}
+@media (min-device-width:1024px) {
+ .cssdevwidth em:after {
+  content:"1024px+"
+ }
+ .cssdevwidthem em:after {
+  content:"64em+"
+ }
+}
+@media (min-device-width:1080px) {
+ .cssdevwidth em:after {
+  content:"1080px+"
+ }
+ .cssdevwidthem em:after {
+  content:"67em+"
+ }
+}
+@media (min-device-width:1280px) {
+ .cssdevwidth em:after {
+  content:"1280px+"
+ }
+ .cssdevwidthem em:after {
+  content:"80em+"
+ }
+}
+@media (min-device-width:1366px) {
+ .cssdevwidth em:after {
+  content:"1366px+"
+ }
+ .cssdevwidthem em:after {
+  content:"85em+"
+ }
+}
+@media (min-device-width:1440px) {
+  .cssdevwidth em:after {
+    content: "1440px+"
+  }
+  .cssdevwidthem em:after {
+    content: "85em+"
+  }
+}
+@media (min-device-width:1600px) {
+ .cssdevwidth em:after {
+  content:"1600px+"
+ }
+ .cssdevwidthem em:after {
+  content:"100em+"
+ }
+}
+@media (min-device-width:1920px) {
+ .cssdevwidth em:after {
+  content:"1920px+"
+ }
+ .cssdevwidthem em:after {
+  content:"120em+"
+ }
+}
+@media (min-device-height:240px) {
+ .cssdevheight em:after {
+  content:"240px+"
+ }
+ .cssdevheightem em:after {
+  content:"15em+"
+ }
+}
+@media (min-device-height:320px) {
+ .cssdevheight em:after {
+  content:"320px+"
+ }
+ .cssdevheightem em:after {
+  content:"20em+"
+ }
+}
+@media (min-device-height:360px) {
+ .cssdevheight em:after {
+  content:"360px+"
+ }
+ .cssdevheightem em:after {
+  content:"22.5em+"
+ }
+}
+@media (min-device-height:375px) {
+ .cssdevheight em:after {
+  content:"375px+"
+ }
+ .cssdevheightem em:after {
+  content:"23.4em+"
+ }
+}
+@media (min-device-height:390px) {
+ .cssdevheight em:after {
+  content:"390px+"
+ }
+ .cssdevheightem em:after {
+  content:"24.4em+"
+ }
+}
+@media (min-device-height:480px) {
+ .cssdevheight em:after {
+  content:"480px+"
+ }
+ .cssdevheightem em:after {
+  content:"30em+"
+ }
+}
+@media (min-device-height:504px) {
+ .cssdevheight em:after {
+  content:"504px+"
+ }
+ .cssdevheightem em:after {
+  content:"31.5em+"
+ }
+}
+@media (min-device-height:540px) {
+ .cssdevheight em:after {
+  content:"540px+"
+ }
+ .cssdevheightem em:after {
+  content:"33em+"
+ }
+}
+@media (min-device-height:568px) {
+ .cssdevheight em:after {
+  content:"568px+"
+ }
+ .cssdevheightem em:after {
+  content:"35em+"
+ }
+}
+@media (min-device-height:576px) {
+ .cssdevheight em:after {
+  content:"576px+"
+ }
+ .cssdevheightem em:after {
+  content:"36em+"
+ }
+}
+@media (min-device-height:600px) {
+ .cssdevheight em:after {
+  content:"600px+"
+ }
+ .cssdevheightem em:after {
+  content:"36em+"
+ }
+}
+@media (min-device-height:640px) {
+ .cssdevheight em:after {
+  content:"640px+"
+ }
+ .cssdevheightem em:after {
+  content:"40em+"
+ }
+}
+@media (min-device-height:667px) {
+ .cssdevheight em:after {
+  content:"667px+"
+ }
+ .cssdevheightem em:after {
+  content:"42em+"
+ }
+}
+@media (min-device-height:690px) {
+ .cssdevheight em:after {
+  content:"690px+"
+ }
+ .cssdevheightem em:after {
+  content:"43em+"
+ }
+}
+@media (min-device-height:720px) {
+ .cssdevheight em:after {
+  content:"720px+"
+ }
+ .cssdevheightem em:after {
+  content:"45em+"
+ }
+}
+@media (min-device-height:732px) {
+ .cssdevheight em:after {
+  content:"732px+"
+ }
+ .cssdevheightem em:after {
+  content:"45.75em+"
+ }
+}
+@media (min-device-height:736px) {
+ .cssdevheight em:after {
+  content:"736px+"
+ }
+ .cssdevheightem em:after {
+  content:"46em+"
+ }
+}
+@media (min-device-height:768px) {
+ .cssdevheight em:after {
+  content:"768px+"
+ }
+ .cssdevheightem em:after {
+  content:"48em+"
+ }
+}
+@media (min-device-height:800px) {
+ .cssdevheight em:after {
+  content:"800px+"
+ }
+ .cssdevheightem em:after {
+  content:"50em+"
+ }
+}
+@media (min-device-height:900px) {
+  .cssdevheight em:after {
+    content: "900px+"
+  }
+  .cssdevheightem em:after {
+    content: "50em+"
+  }
+}
+@media (min-device-height:960px) {
+ .cssdevheight em:after {
+  content:"960px+"
+ }
+ .cssdevheightem em:after {
+  content:"60em+"
+ }
+}
+@media (min-device-height:980px) {
+ .cssdevheight em:after {
+  content:"980px+"
+ }
+ .cssdevheightem em:after {
+  content:"61em+"
+ }
+}
+@media (min-device-height:1024px) {
+ .cssdevheight em:after {
+  content:"1024px+"
+ }
+ .cssdevheightem em:after {
+  content:"64em+"
+ }
+}
+@media (min-device-height:1080px) {
+ .cssdevheight em:after {
+  content:"1080px+"
+ }
+ .cssdevheightem em:after {
+  content:"67em+"
+ }
+}
+@media (min-device-height:1280px) {
+ .cssdevheight em:after {
+  content:"1280px+"
+ }
+ .cssdevheightem em:after {
+  content:"80em+"
+ }
+}
+@media (min-device-height:1366px) {
+ .cssdevheight em:after {
+  content:"1366px+"
+ }
+ .cssdevheightem em:after {
+  content:"85em+"
+ }
+}
+@media (min-device-height:1600px) {
+ .cssdevheight em:after {
+  content:"1600px+"
+ }
+ .cssdevheightem em:after {
+  content:"100em+"
+ }
+}
+@media (min-device-height:1920px) {
+ .cssdevheight em:after {
+  content:"1920px+"
+ }
+ .cssdevheightem em:after {
+  content:"120em+"
+ }
+}
+
+
+/*
+ * CSS RATIO
+ */
+
+
+@media (-webkit-min-device-pixel-ratio:1),(min-resolution:1dppx),(min-resolution:96dpi) {
+ .cssratio em:after {
+  content:"1+"
+ }
+}
+@media (-webkit-device-pixel-ratio:1),(resolution:1dppx),(resolution:96dpi) {
+ .cssratio em:after {
+  content:"1"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:1.3),(-webkit-min-device-pixel-ratio:1.2916666666666667),(min-resolution:1.3dppx),(min-resolution:124dpi) {
+ .cssratio em:after {
+  content:"1.3+"
+ }
+}
+@media (-webkit-device-pixel-ratio:1.3),(resolution:1.3dppx),(resolution:125dpi) {
+ .cssratio em:after {
+  content:"1.3"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx),(min-resolution:144dpi) {
+ .cssratio em:after {
+  content:"1.5+"
+ }
+}
+@media (-webkit-device-pixel-ratio:1.5),(resolution:1.5dppx),(resolution:144dpi) {
+ .cssratio em:after {
+  content:"1.5"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:2dppx),(min-resolution:192dpi) {
+ .cssratio em:after {
+  content:"2+"
+ }
+}
+@media (-webkit-device-pixel-ratio:2),(resolution:2dppx),(resolution:192dpi) {
+ .cssratio em:after {
+  content:"2"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:2.2),(-webkit-min-device-pixel-ratio:2.1979166666666665),(min-resolution:2.2dppx),(min-resolution:211dpi) {
+ .cssratio em:after {
+  content:"2.2+"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:2.4),(-webkit-min-device-pixel-ratio:2.3958333333333335),(min-resolution:2.4dppx),(min-resolution:230dpi) {
+ .cssratio em:after {
+  content:"2.4+"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:2.5),(min-resolution:2.5dppx),(min-resolution:240dpi) {
+ .cssratio em:after {
+  content:"2.5+"
+ }
+}
+@media (-webkit-device-pixel-ratio:2.5),(resolution:2.5dppx),(resolution:240dpi) {
+ .cssratio em:after {
+  content:"2.5"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:3),(min-resolution:3dppx),(min-resolution:288dpi) {
+ .cssratio em:after {
+  content:"3+"
+ }
+}
+@media (-webkit-device-pixel-ratio:3),(resolution:3dppx),(resolution:288dpi) {
+ .cssratio em:after {
+  content:"3"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:3.5),(min-resolution:3.5dppx),(min-resolution:336dpi) {
+ .cssratio em:after {
+  content:"3.5+"
+ }
+}
+@media (-webkit-device-pixel-ratio:3.5),(resolution:3.5dppx),(resolution:336dpi) {
+ .cssratio em:after {
+  content:"3.5"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:4),(min-resolution:4dppx),(min-resolution:384dpi) {
+ .cssratio em:after {
+  content:"4+"
+ }
+}
+@media (-webkit-device-pixel-ratio:4),(resolution:4dppx),(resolution:384dpi) {
+ .cssratio em:after {
+  content:"4"
+ }
+}
+@media (-webkit-min-device-pixel-ratio:5),(min-resolution:5dppx),(min-resolution:480dpi) {
+ .cssratio em:after {
+  content:"5+"
+ }
+}
+@media (-webkit-device-pixel-ratio:5),(resolution:5dppx),(resolution:480dpi) {
+ .cssratio em:after {
+  content:"5"
+ }
+}
+
+
+
+/*
+ *
+ */

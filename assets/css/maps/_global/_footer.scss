@@ -1,0 +1,21 @@
+.footer {
+
+  padding: $spacer-large $spacer-medium;
+
+  & a, & .footer-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+}
+
+.copyright-text {
+
+  padding: $spacer-medium-plus 0;
+  font-size: 1.2rem;
+
+  p {
+    margin-bottom: 0;
+  }
+
+}

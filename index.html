@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+
+<!-- Head file -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>mydevice.io : web devices capabilities</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Core Stylesheet -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+</head>
+
+
+<body id="body" class="layout--mydevice">
+
+    <!-- Header Area -->
+    <header class="header">
+        <nav class="nav">
+
+            <!-- Logo -->
+            <a class="" href="#">
+                <h1>
+                    <img src="assets/img/mydevice-logo.svg" alt="Mydevice.io" width="243px" height="36px">
+                </h1>
+            </a>
+
+        </nav>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Hero Area -->
+    <section class="hero bg--gradient">
+        <div class="rule"></div>
+        <div class="container">
+
+            <span class="icon-arrow-left"></span>
+            <div class="hero-heading animate animated txtcenter">
+
+                <p class="text-vw">my viewport width is:</p>
+                <p id="viewportwidth" class="pixel-vw"></p>
+                <p id="viewportwidthem" class="rem-vw"></p>
+
+                <a class="button button--ghost2" href="#compare-devices">Compare devices </a>
+
+
+            </div>
+            <span class="icon-arrow-right"></span>
+
+        </div>
+    </section>
+    <!-- Wellcome Area End -->
+
+
+
+    <section class="bg--darker metrics">
+        <div class="container mw--xxl">
+
+            <h2 class="txtcenter">Screen metrics</h2>
+
+            <div class="metrics-grid">
+
+                <div class="box bg--dark">
+                    <h3 class="metrics-title">Size</h3>
+                    <ul class="unstyled values">
+                        <li id="screenwidth">
+                            JS screen.width: <em></em>
+                        </li>
+                        <li id="screenheight">
+                            JS screen.height: <em></em>
+                        </li>
+                        <li class="cssdevwidth">
+                            @media (device-width): <em></em>
+                        </li>
+                        <li class="cssdevheight">
+                            @media (device-height): <em></em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box bg--dark">
+                    <h3 class="metrics-title">Pixel ratio</h3>
+                    <ul class="unstyled values">
+                        <li class="cssratio">
+                            CSS pixel-ratio: <em></em>
+                        </li>
+                        <li id="jsratio">
+                            JS pixel-ratio: <em></em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box bg--dark">
+                    <h3 class="metrics-title">Density</h3>
+                    <ul class="unstyled values">
+                        <li id="jsdpi">
+                            Resolution (dpi): <em></em>
+                        </li>
+                        <li id="jsdppx">
+                            Resolution (dppx): <em></em>
+                        </li>
+                        <li id="jsdpcm">
+                            Resolution (dpcm): <em></em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box bg--dark">
+                    <h3 class="metrics-title">Misc</h3>
+                    <ul class="unstyled values">
+                        <li id="rfs">
+                            Root font size: <em></em>
+                        </li>
+                        <li class="cssorient">
+                            Orientation: <em></em>
+                        </li>
+                        <li id="deviceaspectratio">
+                            Device Aspect-Ratio: <em></em>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="bg--dark browser-features">
+        <div class="container">
+
+            <h2 class="txtcenter">My browser features</h2>
+
+            <div class="bg--darker mw--m box pam grid-2 has-gutter-xl">
+                <div class="">
+                    <h3>CSS3</h3>
+                    <ul class="values unstyled js-modernizr">
+                        <li class="flexbox">
+                            <span class="icon-"></span>flexbox</li>
+                        <li class="cssgrid">
+                            <span class="icon-"></span>grid layout</li>
+                        <li class="cssgridlegacy">
+                            <span class="icon-"></span>grid layout (old)</li>
+                        <li class="csspositionsticky">
+                            <span class="icon-"></span>position: sticky</li>
+                        <li class="regions">
+                            <span class="icon-"></span>regions</li>
+                        <li class="supports">
+                            <span class="icon-"></span>@supports</li>
+                        <li class="willchange">
+                            <span class="icon-"></span>will-change</li>
+                        <li class="csspointerevents">
+                            <span class="icon-"></span>pointer events</li>
+                        <li class="csscalc">
+                            <span class="icon-"></span>calc()</li>
+                        <li class="cssvwunit">
+                            <span class="icon-"></span>viewport units</li>
+                        <li class="hovermq">
+                            <span class="icon-"></span>hover media query</li>
+                        <li class="pointermq">
+                            <span class="icon-"></span>pointer media query</li>
+                        <li class="backgroundblendmode">
+                            <span class="icon-"></span>background blend mode</li>
+                        <li class="bgsizecover">
+                            <span class="icon-"></span>background-size: cover</li>
+                        <li class="objectfit">
+                            <span class="icon-"></span>object-fit</li>
+                        <li class="ligatures">
+                            <span class="icon-"></span>font ligatures</li>
+                        <li class="appearance">
+                            <span class="icon-"></span>appearance</li>
+                        <li class="cssfilters">
+                            <span class="icon-"></span>filters</li>
+                        <li class="cssmask">
+                            <span class="icon-"></span>masks</li>
+                        <li class="scrollsnappoints">
+                            <span class="icon-"></span>scroll snap points</li>
+                        <li class="shapes">
+                            <span class="icon-"></span>shapes</li>
+                        <li class="csshyphens">
+                            <span class="icon-"></span>hyphens</li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h3>HTML5 / JS</h3>
+                    <ul class="values unstyled js-modernizr">
+                        <li class="flash">
+                            <span class="icon-"></span>flash</li>
+                        <li class="video">
+                            <span class="icon-"></span>video</li>
+                        <li class="webgl">
+                            <span class="icon-"></span>webgl</li>
+                        <li class="canvas">
+                            <span class="icon-"></span>canvas</li>
+                        <li class="srcset">
+                            <span class="icon-"></span>srcset</li>
+                        <li class="picture">
+                            <span class="icon-"></span>&lt;picture&gt;</li>
+                        <li class="inlinesvg">
+                            <span class="icon-"></span>inline SVG</li>
+                        <li class="webp">
+                            <span class="icon-"></span>webp</li>
+                        <li class="jpegxr">
+                            <span class="icon-"></span>jpegxr</li>
+                        <li class="geolocation">
+                            <span class="icon-"></span>geolocation</li>
+                        <li class="matchmedia">
+                            <span class="icon-"></span>matchmedia()</li>
+                        <li class="websockets">
+                            <span class="icon-"></span>websockets</li>
+                        <li class="localstorage">
+                            <span class="icon-"></span>localstorage</li>
+                        <li class="applicationcache">
+                            <span class="icon-"></span>application cache</li>
+                        <li class="webworkers">
+                            <span class="icon-"></span>webworkers</li>
+                        <li class="serviceworker">
+                            <span class="icon-"></span>serviceworker</li>
+                        <li class="svgfilters">
+                            <span class="icon-"></span>SVG filters</li>
+                        <li class="emoji">
+                            <span class="icon-"></span>emoji</li>
+                        <li class="touchevents">
+                            <span class="icon-"></span>touch events</li>
+                        <li class="fullscreen">
+                            <span class="icon-"></span>fullscreen API</li>
+                        <li class="filereader">
+                            <span class="icon-"></span>file API</li>
+                        <li class="gamepads">
+                            <span class="icon-"></span>gamepad API</li>
+                        <li class="performance">
+                            <span class="icon-"></span>performance API</li>
+                        <li class="vibrate">
+                            <span class="icon-"></span>vibration API</li>
+                        <li class="speechrecognition">
+                            <span class="icon-"></span>speech recognition API</li>
+                        <li class="batteryapi">
+                            <span class="icon-"></span>battery API</li>
+                        <li class="ambientlight">
+                            <span class="icon-"></span>ambient light API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="txtcenter">User agent</h2>
+
+            <div class="bg--darker mw--m pam">
+                <p class="txtcenter mbn" id="ua"></p>
+            </div>
+
+            <h2 class="txtcenter">Viewport</h2>
+
+            <div class="bg--darker mw--m pam">
+                <p class="txtcenter mbn">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="compare-devices" id="compare-devices">
+        <div class="container">
+
+            <h2 class="txtcenter">Compare devices</h2>
+
+            <div class="mw--s">
+                <p class="txtcenter">
+                    Mobile devices, in Responsive Web Design, relate to a core value which is the value of CSS width or ("device-width"), in CSS Device Independant Pixels, which depends both of the browser and user zoom settings.
+                </p>
+                <p class="txtcenter">
+                    <b>Choose your weapon&nbsp;:</b>
+                </p>
+            </div>
+
+            <div class="tabs js-tabs">
+
+                <nav class="tabs-menu txtcenter">
+                    <a href="#tab1" class="tabs-menu-link is-active">Smartphones</a>
+                    <a href="#tab2" class="tabs-menu-link">Tablets</a>
+                    <a href="#tab3" class="tabs-menu-link">Other devices</a>
+                </nav>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tabs-content-item">
+                        <table class="tablesort">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class=" sort-header">
+                                        <div>name</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>phys.<br>width</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>phys.<br>height</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>CSS<br>width</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>CSS<br>height</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>pixel<br>ratio</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>phys.<br>ppi</div>
+                                    </th>
+                                    <th scope="col" class=" sort-header">
+                                        <div>CSS<br>ppi</div>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 12 Pro Max</td>
+                                    <td>1284</td>
+                                    <td>2778</td>
+                                    <td>428</td>
+                                    <td>926</td>
+                                    <td>3</td>
+                                    <td>458</td>
+                                    <td>288</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 12, 12 Pro</td>
+                                    <td>1170</td>
+                                    <td>2532</td>
+                                    <td>390</td>
+                                    <td>844</td>
+                                    <td>3</td>
+                                    <td>460</td>
+                                    <td>288</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 12 mini</td>
+                                    <td>1125</td>
+                                    <td>2436</td>
+                                    <td>375</td>
+                                    <td>812</td>
+                                    <td>3</td>
+                                    <td>476</td>
+                                    <td>288</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone SE (2nd gen)</td>
+                                    <td>750</td>
+                                    <td>1334</td>
+                                    <td>375</td>
+                                    <td>667</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 11 Pro Max, XS Max</td>
+                                    <td>1242</td>
+                                    <td>2688</td>
+                                    <td>414</td>
+                                    <td>896</td>
+                                    <td>3</td>
+                                    <td>458</td>
+                                    <td>288</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 11, XR</td>
+                                    <td>828</td>
+                                    <td>1792</td>
+                                    <td>414</td>
+                                    <td>896</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone X, XS, 11 Pro</td>
+                                    <td>1125</td>
+                                    <td>2436</td>
+                                    <td>375</td>
+                                    <td>812</td>
+                                    <td>3</td>
+                                    <td>458</td>
+                                    <td>288</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 7, iPhone 8</td>
+                                    <td>750</td>
+                                    <td>1334</td>
+                                    <td>375</td>
+                                    <td>667</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 6+, 6S+, 7+, 8+</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>414</td>
+                                    <td>736</td>
+                                    <td>3</td>
+                                    <td>401</td>
+                                    <td>288</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 6, 6S, SE2</td>
+                                    <td>750</td>
+                                    <td>1334</td>
+                                    <td>375</td>
+                                    <td>667</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 5, SE</td>
+                                    <td>640</td>
+                                    <td>1136</td>
+                                    <td>320</td>
+                                    <td>568</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 4</td>
+                                    <td>640</td>
+                                    <td>960</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPhone 3</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>1</td>
+                                    <td>163</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPod Touch</td>
+                                    <td>640</td>
+                                    <td>1136</td>
+                                    <td>320</td>
+                                    <td>568</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> G5</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>538</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> G4</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>538</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> G3</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>538</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> Optimus G</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>384</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>318</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S8+</td>
+                                    <td>1440</td>
+                                    <td>2960</td>
+                                    <td>360</td>
+                                    <td>740</td>
+                                    <td>4</td>
+                                    <td>529</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S8</td>
+                                    <td>1440</td>
+                                    <td>2960</td>
+                                    <td>360</td>
+                                    <td>740</td>
+                                    <td>4</td>
+                                    <td>568</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S7, S7 edge</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>534</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S6</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>577</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S5</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>441</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S4</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>441</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S4 mini</td>
+                                    <td>540</td>
+                                    <td>960</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>1.5</td>
+                                    <td>256</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S3</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>306</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S3 mini</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>320</td>
+                                    <td>533</td>
+                                    <td>1.5</td>
+                                    <td>233</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S2</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>320</td>
+                                    <td>533</td>
+                                    <td>1.5</td>
+                                    <td>217</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy S</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>320</td>
+                                    <td>533</td>
+                                    <td>1.5</td>
+                                    <td>233</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Nexus</td>
+                                    <td>720</td>
+                                    <td>1200</td>
+                                    <td>360</td>
+                                    <td>600</td>
+                                    <td>2</td>
+                                    <td>316</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Note 8</td>
+                                    <td>1440</td>
+                                    <td>2960</td>
+                                    <td>360</td>
+                                    <td>740</td>
+                                    <td>4</td>
+                                    <td>521</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Note 4</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>4</td>
+                                    <td>515</td>
+                                    <td>384</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Note 3</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>386</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Note 2</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>267</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Note</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>400</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>285</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> Nexus 5</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>445</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> Nexus 4</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>384</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>320</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 1520</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>432</td>
+                                    <td>768</td>
+                                    <td>2.5</td>
+                                    <td>367</td>
+                                    <td>240</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 1020</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>2.4</td>
+                                    <td>332</td>
+                                    <td>220</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 925</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>2.4</td>
+                                    <td>332</td>
+                                    <td>220</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 920</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>2.4</td>
+                                    <td>332</td>
+                                    <td>220</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 900</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>1.5</td>
+                                    <td>217</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 830</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>2</td>
+                                    <td>294</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Lumia 620</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>1.5</td>
+                                    <td>252</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Motorola</span> Nexus 6</td>
+                                    <td>1440</td>
+                                    <td>2560</td>
+                                    <td>412</td>
+                                    <td>690</td>
+                                    <td>3.5</td>
+                                    <td>493</td>
+                                    <td>336</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>HTC</span> One</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>468</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>HTC</span> 8X</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>3</td>
+                                    <td>341</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>HTC</span> Evo 3D</td>
+                                    <td>540</td>
+                                    <td>960</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>1.5</td>
+                                    <td>256</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sony</span> Xperia Z3</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>598</td>
+                                    <td>3</td>
+                                    <td>424</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sony</span> Xperia Z</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>443</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sony</span> Xperia S</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>342</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sony</span> Xperia P</td>
+                                    <td>540</td>
+                                    <td>960</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>1.5</td>
+                                    <td>275</td>
+                                    <td>144</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Xiaomi Redmi Note</span> 8T</td>
+                                    <td>1080</td>
+                                    <td>2340</td>
+                                    <td>393</td>
+                                    <td>775</td>
+                                    <td>2.75</td>
+                                    <td>409</td>
+                                    <td>264</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Xiaomi Redmi Note</span> 5, 6</td>
+                                    <td>1080</td>
+                                    <td>2160</td>
+                                    <td>393</td>
+                                    <td>739</td>
+                                    <td>2.75</td>
+                                    <td>403</td>
+                                    <td>264</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Xiaomi</span> Mi 4</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>441</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Xiaomi</span> Mi 3</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>441</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Lenovo</span> K900</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>401</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Pantech</span> Vega n°6</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>373</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Leap</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>390</td>
+                                    <td>695</td>
+                                    <td>2</td>
+                                    <td>294</td>
+                                    <td>177</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Passport</td>
+                                    <td>1440</td>
+                                    <td>1440</td>
+                                    <td>504</td>
+                                    <td>504</td>
+                                    <td>3</td>
+                                    <td>453</td>
+                                    <td>274</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Classic</td>
+                                    <td>720</td>
+                                    <td>720</td>
+                                    <td>390</td>
+                                    <td>390</td>
+                                    <td>1.8</td>
+                                    <td>294</td>
+                                    <td>177</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Q10</td>
+                                    <td>720</td>
+                                    <td>720</td>
+                                    <td>346</td>
+                                    <td>346</td>
+                                    <td>2</td>
+                                    <td>328</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Z30</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>295</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Z10</td>
+                                    <td>768</td>
+                                    <td>1280</td>
+                                    <td>384</td>
+                                    <td>640</td>
+                                    <td>2</td>
+                                    <td>355</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Torch 9800</td>
+                                    <td>360</td>
+                                    <td>480</td>
+                                    <td>360</td>
+                                    <td>480</td>
+                                    <td>1</td>
+                                    <td>187</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>ZTE</span> Grand S</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>360</td>
+                                    <td>640</td>
+                                    <td>3</td>
+                                    <td>441</td>
+                                    <td>288</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>ZTE</span> Open (Firefox OS)</td>
+                                    <td>480</td>
+                                    <td>720</td>
+                                    <td>320</td>
+                                    <td>480</td>
+                                    <td>1.5</td>
+                                    <td>165</td>
+                                    <td>144</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="tab2" class="tabs-content-item display-n" aria-hidden="true">
+                        <table class="tablesort">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div>name</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys.
+                                            <br>width</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys.
+                                            <br>height</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS
+                                            <br>width</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS
+                                            <br>height</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>pixel
+                                            <br>ratio</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys. ppi</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS ppi</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad Pro 12.9</td>
+                                    <td>2048</td>
+                                    <td>2732</td>
+                                    <td>1024</td>
+                                    <td>1366</td>
+                                    <td>2</td>
+                                    <td>265</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad Pro 11</td>
+                                    <td>1668</td>
+                                    <td>2388</td>
+                                    <td>834</td>
+                                    <td>1194</td>
+                                    <td>2</td>
+                                    <td>264</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad Pro 10.5</td>
+                                    <td>1668</td>
+                                    <td>2224</td>
+                                    <td>834</td>
+                                    <td>1112</td>
+                                    <td>2</td>
+                                    <td>264</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad Pro 9.7</td>
+                                    <td>1536</td>
+                                    <td>2048</td>
+                                    <td>768</td>
+                                    <td>1024</td>
+                                    <td>2</td>
+                                    <td>264</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad Air</td>
+                                    <td>1640</td>
+                                    <td>2360</td>
+                                    <td>820</td>
+                                    <td>1180</td>
+                                    <td>2</td>
+                                    <td>264</td>
+                                    <td>192</td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad</td>
+                                    <td>1620</td>
+                                    <td>2160</td>
+                                    <td>810</td>
+                                    <td>1080</td>
+                                    <td>2</td>
+                                    <td>264</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Apple</span> iPad mini</td>
+                                    <td>1536</td>
+                                    <td>2048</td>
+                                    <td>768</td>
+                                    <td>1024</td>
+                                    <td>2</td>
+                                    <td>326</td>
+                                    <td>192</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Tab 3 10"</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>1</td>
+                                    <td>149</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Tab 2 10"</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>1</td>
+                                    <td>149</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Tab (8.9")</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>1</td>
+                                    <td>170</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Galaxy Tab 2 (7")</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>1</td>
+                                    <td>170</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Samsung</span> Nexus 10</td>
+                                    <td>1600</td>
+                                    <td>2560</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>2</td>
+                                    <td>300</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>HTC</span> Nexus 9</td>
+                                    <td>1538</td>
+                                    <td>2048</td>
+                                    <td>768</td>
+                                    <td>1024</td>
+                                    <td>2</td>
+                                    <td>281</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Asus</span> Nexus 7 (v2)</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>600</td>
+                                    <td>960</td>
+                                    <td>2</td>
+                                    <td>323</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Asus</span> Nexus 7 (v1)</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>604</td>
+                                    <td>966</td>
+                                    <td>1.325</td>
+                                    <td>216</td>
+                                    <td>127</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>LG</span> G Pad 8.3</td>
+                                    <td>1200</td>
+                                    <td>1920</td>
+                                    <td>600</td>
+                                    <td>960</td>
+                                    <td>2</td>
+                                    <td>273</td>
+                                    <td>192</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Amazon</span> Kindle Fire HD 8.9</td>
+                                    <td>1200</td>
+                                    <td>1920</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>1.5</td>
+                                    <td>254</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Amazon</span> Kindle Fire HD 7</td>
+                                    <td>800</td>
+                                    <td>1280</td>
+                                    <td>480</td>
+                                    <td>800</td>
+                                    <td>1.5</td>
+                                    <td>216</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Amazon</span> Kindle Fire</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>1</td>
+                                    <td>167</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Surface Pro 3</td>
+                                    <td>1440</td>
+                                    <td>2160</td>
+                                    <td>1024</td>
+                                    <td>1440</td>
+                                    <td>1.5 / 1.4</td>
+                                    <td>216</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Surface Pro 2</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>1.5</td>
+                                    <td>207</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Surface Pro</td>
+                                    <td>1080</td>
+                                    <td>1920</td>
+                                    <td>720</td>
+                                    <td>1280</td>
+                                    <td>1.5</td>
+                                    <td>207</td>
+                                    <td>144</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Microsoft</span> Surface</td>
+                                    <td>768</td>
+                                    <td>1366</td>
+                                    <td>768</td>
+                                    <td>1366</td>
+                                    <td>1</td>
+                                    <td>148</td>
+                                    <td>96</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Blackberry</span> Playbook</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>600</td>
+                                    <td>1024</td>
+                                    <td>1</td>
+                                    <td>169</td>
+                                    <td>96</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="tab3" class="tabs-content-item display-n" aria-hidden="true">
+                        <table class="tablesort">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div>name</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys.
+                                            <br>width</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys.
+                                            <br>height</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS
+                                            <br>width</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS
+                                            <br>height</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>pixel
+                                            <br>ratio</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>phys. ppi</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div>CSS ppi</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Google</span> Glass</td>
+                                    <td>640</td>
+                                    <td>360</td>
+                                    <td>427</td>
+                                    <td>240</td>
+                                    <td>1.5</td>
+                                    <td>?</td>
+                                    <td>144</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <!--
+    <section class="meta-viewport bg--gray">
+      <div class="container">
+
+        <h2 class="txtcenter">Meta viewport</h2>
+
+        <div class="txtcenter">
+          <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        </div>
+
+      </div>
+    </section>
+    -->
+
+    <section class="ref-picture">
+        <div class="container txtcenter">
+
+            <h2>Reference picture</h2>
+
+            <div class="size">
+                <span class="icon-arrow-left"></span>
+                <p class="txtcenter">320px</p>
+                <span class="icon-arrow-right"></span>
+            </div>
+
+            <img src="assets/img/ref-picture.png" alt="Responsive reference 320px picture">
+
+        </div>
+    </section>
+
+    <section class="ressources bg--gray">
+        <div class="container txtcenter">
+
+            <h2 class="">More info</h2>
+
+            <ul class="txtleft">
+                <li><a class="link" href="http://screensiz.es/">Screensiz.es</a></li>
+                <li><a class="link" href="http://viewportsizes.com/">Viewportsizes.com</a></li>
+                <li><a class="link" href="http://dpi.lv/">dpi.lv</a></li>
+                <li><a class="link" href="http://mqtest.io/">mqtest.io</a></li>
+                <li><a class="link" href="http://ryanve.com/lab/dimensions/">ryanve.com/lab</a></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <footer class="footer bg--primary txtcenter">
+        <div class="mw--s">
+            <p class="">
+                mydevice.io is a <span title="that means Great!" lang="en">fifou</span> project designed by Raphaël, Rodolphe, Laurène, Olivier from <a class="footer-link" href="https://alsacreations.fr">alsacreations</a>.
+            </p>
+            <p><a class="link" href="https://alsacreations.fr" target="_blank"><img src="assets/img/alsacreations-logo.svg" alt="Alsacréations logo"></a></p>
+        </div>
+    </footer>
+
+    <!--
+    <div class="copyright-text txtcenter">
+      <div class="mw--s">
+        <p>Copyright ©2018</p>
+      </div>
+    </div>
+  -->
+
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/mydevice.js"></script>
+
+</body>
+
+</html>

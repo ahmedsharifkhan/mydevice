@@ -1,0 +1,94 @@
+
+/*
+ * Compare devices section
+ * tabs buttons are handled in _global file
+ */
+
+.compare-devices {
+
+  table {
+    line-height: 1.2;
+    table-layout: auto;
+  }
+
+  tr {
+    border-bottom: 1px solid $table-border;
+
+    td {
+      &:nth-child(4),
+      &:nth-child(5) {
+        background-color: rgba(224, 62, 114, 0.15);
+      }
+    }
+  }
+
+  td,
+  th {
+    padding: $spacer-small $spacer-small-plus;
+  }
+
+}
+
+
+@include respond-to("medium") {
+
+  .compare-devices {
+    table {
+      td,
+      th {
+        width: auto;
+      }
+
+      thead {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+      }
+
+      tr {
+        td {
+
+          &:first-child {
+            width: 30% !important;
+            vertical-align: top;
+          }
+
+          &:not(:first-child) {
+            display: block !important;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid $table-border;
+          }
+
+          &:nth-of-type(2):before {
+            content: "phys. width: ";
+          }
+          &:nth-of-type(3):before {
+            content: "phys. height: ";
+          }
+          &:nth-of-type(4):before {
+            content: "CSS width: ";
+          }
+          &:nth-of-type(5):before {
+            content: "CSS height: ";
+          }
+          &:nth-of-type(6):before {
+            content: "px ratio: ";
+          }
+          &:nth-of-type(7):before {
+            content: "ppi: ";
+          }
+          &:nth-of-type(8):before {
+            content: "CSS ppi: ";
+          }
+
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,54 @@
+
+
+/*
+ * Ref picture section
+ */
+
+.ref-picture {
+
+  .size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+
+    p {
+      flex: 1 1 0%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      &::before,
+      &::after {
+        content: "";
+        background-image: linear-gradient(gray, gray);
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        background-position: center center;
+        display: block;
+        height: 10px;
+        flex: 1 1 0;
+      }
+
+      &::before {
+        margin-right: $spacer-small;
+      }
+
+      &::after {
+        margin-left: $spacer-small;
+      }
+
+    }
+
+    [class^="icon-"] {
+      flex-shrink: 0;
+      font-size: 1.8rem;
+      margin: 0 -$spacer-tiny-plus;
+    }
+
+  }
+
+}
